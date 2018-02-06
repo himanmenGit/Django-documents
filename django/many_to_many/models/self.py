@@ -10,6 +10,9 @@ class FacebookUser(models.Model):
     # 자기 자신도 facebookUser이기 때문에 self로 참조.
     friends = models.ManyToManyField('self')
 
+    class Meta:
+        verbose_name_plural = 'Self - FacebookUsers'
+
     def __str__(self):
         # name이 '이한영' 이며
         # 친구로 '박보영', '아이유'를 가지는 경우

@@ -29,6 +29,9 @@ class TwitterUser(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name_plural = 'Symmetrical_Intermediate - TwitterUsers'
+
     @property
     def following(self):
         """
@@ -153,6 +156,7 @@ class Relation(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
+        verbose_name_plural = 'Symmetrical_Intermediate - Relations'
         unique_together = (
             # from_user와 to_user의 값이 이미 있을 경우
             # DB에 중복 데이터 저장을 막음
