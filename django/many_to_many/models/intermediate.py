@@ -3,20 +3,11 @@ from django.utils import timezone
 
 from django.db import models
 
-
-class Topping(models.Model):
-    name = models.CharField(max_length=50)
-
-    def __str__(self):
-        return self.name
-
-
-class Pizza(models.Model):
-    name = models.CharField(max_length=50)
-    toppings = models.ManyToManyField(Topping)
-
-    def __str__(self):
-        return self.name
+__all__ = [
+    'Post',
+    'User',
+    'PostLike',
+]
 
 
 # Extra fiels on many-to-many relationships
@@ -57,6 +48,6 @@ class PostLike(models.Model):
             name=self.user.name,
             date=datetime.strftime(
                 # timezone.make_naive(self.created_date), '%y.%m.%d'
-                timezone.localtime(self.created_date),'%y.%m.%d'
+                timezone.localtime(self.created_date), '%y.%m.%d'
             )
         )
