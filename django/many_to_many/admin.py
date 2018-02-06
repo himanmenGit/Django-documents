@@ -7,8 +7,9 @@ from many_to_many.models import (
     Post, User, PostLike,
     # self
     FacebookUser,
-    InstagramUser
-)
+    InstagramUser,
+    TwitterUser,
+    Relation)
 
 admin.site.register(Topping)
 admin.site.register(Pizza)
@@ -19,3 +20,5 @@ admin.site.register(PostLike)
 
 admin.site.register(FacebookUser)
 admin.site.register(InstagramUser)
+admin.site.register(TwitterUser)
+admin.site.register(Relation)
