@@ -6,7 +6,8 @@ from many_to_many.models import (
     # intermediate
     Post, User, PostLike,
     # self
-    FacebookUser
+    FacebookUser,
+    InstagramUser
 )
 
 admin.site.register(Topping)
@@ -17,3 +18,4 @@ admin.site.register(User)
 admin.site.register(PostLike)
 
 admin.site.register(FacebookUser)
+admin.site.register(InstagramUser)
