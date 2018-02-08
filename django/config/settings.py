@@ -35,8 +35,8 @@ INSTALLED_APPS = [
     'relations.foreignkey.apps.ForeignkeyConfig',
     'relations.many_to_many.apps.ManyToManyConfig',
     'relations.one_to_one.apps.OneToOneConfig',
-    'inheritance.abstract_base_classes.apps.AbstractBaseClassesConfig',
-
+    'inheritance.abstract_base_classes2.apps.AbstractBaseClasses2Config',
+    'inheritance.rel.apps.RelConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
