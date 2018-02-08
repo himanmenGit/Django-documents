@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from foreignkey.models import Manufacturer, Car, Person, Type, Pokemon
+from .models import Manufacturer, Car, Person, Type, Pokemon
 
 admin.site.register(Manufacturer)
 admin.site.register(Car)
