@@ -15,7 +15,7 @@ class Restaurant(models.Model):
         on_delete=models.CASCADE,
         primary_key=True,
     )
-    serves_hot_dog = models.BooleanField(default=False)
+    serves_hot_dogs = models.BooleanField(default=False)
     serves_pizza = models.BooleanField(default=False)
 
     def __str__(self):

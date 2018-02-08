@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from many_to_many.models import (
+from .models import (
     # basic
     Topping, Pizza,
     # intermediate
