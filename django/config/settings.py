@@ -38,12 +38,15 @@ INSTALLED_APPS = [
     'inheritance.abstract_base_classes2.apps.AbstractBaseClasses2Config',
     'inheritance.rel.apps.RelConfig',
     'inheritance.multi_table.apps.MultiTableConfig',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'django_extensions',
 ]
 
 MIDDLEWARE = [

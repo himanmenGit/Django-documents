@@ -9,9 +9,11 @@ class Place(models.Model):
         return f'{self.name} | {self.address}'
 
 
-class Restaurant(models.Model):
+class Restaurant(Place):
     server_hot_gods = models.BooleanField(default=False)
     server_pizza = models.BooleanField(default=False)
+
+    # nearby_places = models.ManyToManyField(Place)
 
     def __str__(self):
         return f'Restaturant {self.name} | {self.address}'
